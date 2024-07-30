@@ -1,17 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-ul,
-ol {
-    list-style: none;
-}
-.container {
-    max-width: 1440px;
-    margin: auto;
-}
+@import "./global/fonts.scss";
+@import "./global/global.scss";
 
+.Address {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  background-color: $primaryColor;
+  .leftInfo {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      column-gap: 8px;
+      .rightAddress {
+        color: white;
+        font-family: poppinsRegular;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 165%;
+      }
+    }
+  }
+  .rightInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    .leftPhone {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        color: white;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 165%;
+        font-family: poppinsRegular;
+      }
+    }
+    .rightMail {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      img {
+        width: 18px;
+        height: 13px;
+      }
+      p {
+        color: white;
+        font-family: poppinsRegular;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 165%;
+      }
+    }
+  }
+}

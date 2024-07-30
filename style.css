@@ -1,3 +1,15 @@
+@font-face {
+  font-family: poppinsMedium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +28,67 @@ ol {
 .container {
   max-width: 1440px;
   margin: auto;
+}
+
+.Address {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  background-color: #3a0ca3;
+}
+.Address .leftInfo {
+  display: flex;
+  align-items: center;
+}
+.Address .leftInfo a {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.Address .leftInfo a .rightAddress {
+  color: white;
+  font-family: poppinsRegular;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 165%;
+}
+.Address .rightInfo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.Address .rightInfo .leftPhone {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.Address .rightInfo .leftPhone img {
+  width: 16px;
+  height: 16px;
+}
+.Address .rightInfo .leftPhone p {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 165%;
+  font-family: poppinsRegular;
+}
+.Address .rightInfo .rightMail {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.Address .rightInfo .rightMail img {
+  width: 18px;
+  height: 13px;
+}
+.Address .rightInfo .rightMail p {
+  color: white;
+  font-family: poppinsRegular;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 165%;
 }/*# sourceMappingURL=style.css.map */
